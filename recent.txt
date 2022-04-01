@@ -1,0 +1,30 @@
+ 7542  vi variables.tf 
+ 7543  ls
+ 7544  terraform init
+ 7545  terraform plan
+ 7546  terraform apply -auto-approve
+ 7547  bg
+ 7548  ls
+ 7549  cd ~/coreks
+ 7550  export AWS_PROFILE=brademo
+ 7551  ls
+ 7552  kubectl get ns
+ 7553  helm list
+ 7554  helm uninstall calico
+ 7555  kubectl get ns
+ 7556  kubectl get pods
+ 7557  kubectl get pods -n hobbits
+ 7558  kubectl run jumpbox --image=nginx
+ 7559  kubectl get pods
+ 7560  kubectl get pods -o wide
+ 7561  kubectl get nodes
+ 7562  kubectl get nodes -o wide
+ 7563  kubectl get pods -o wide
+ 7564  aws ec2 describe-instances 
+ 7565  aws ec2 describe-instances --query 'Reservations[].Instances[].[InstanceId,PrivateIpAddress]'
+ 7566  aws ec2 describe-instances --query 'Reservations[].Instances[].[InstanceId,PrivateIpAddress]' --region us-west-1
+ 7567  aws ec2 describe-instances --query 'Reservations[].Instances[].[InstanceId,PrivateIpAddress]' -o text  --region us-west-1 
+ 7568  aws ec2 describe-instances --query 'Reservations[].Instances[].[InstanceId,PrivateIpAddress]' --output text  --region us-west-1 
+ 7569  mkdir dlp
+ 7570  cd dlp
+ 7571  history | tail -30 >recent.txt

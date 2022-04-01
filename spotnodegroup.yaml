@@ -1,0 +1,28 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: terraform-2022w11
+  region: us-west-1
+managedNodeGroups:
+  - name: spot-ng-1-workers
+    labels: { role: workers }
+    instanceType: m5.xlarge
+    desiredCapacity: 10
+    volumeSize: 80
+    privateNetworking: true
+    spot: true
+    subnetIds:
+    - subnet-0df1d03aba7faef75
+    - subnet-022c99d5c3f591676
+    vpcId: vpc-0e615949799da96b1
+  - name: spot-ng-2-builders
+    labels: { role: builders }
+    instanceType: m5.2xlarge
+    desiredCapacity: 2
+    volumeSize: 100
+    privateNetworking: true
+    spot: true
+    subnetIds:
+    - subnet-0df1d03aba7faef75
+    - subnet-022c99d5c3f591676
+    vpcId: vpc-0e615949799da96b1

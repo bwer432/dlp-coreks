@@ -1,0 +1,13 @@
+- AutoScalingGroupName: eks-9ebfccad-dbb9-f593-3f8c-c3f602c027c0
+  Cluster: terraform-2022w11
+  CreationTime: "2022-03-17T19:30:00.532Z"
+  DesiredCapacity: 2
+  ImageID: AL2_x86_64
+  InstanceType: t3.medium
+  MaxSize: 4
+  MinSize: 1
+  Name: cluster-terraform-nodegroup-1
+  NodeInstanceRoleARN: arn:aws:iam::042617493216:role/cluster-terraform-nodeRole
+  StackName: ""
+  Status: ACTIVE
+  Version: "1.20"
